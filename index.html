@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ordem de Chegada dos Jogadores de Vôlei</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Jogadores de Vôlei</h1>
+    <input type="text" id="playerName" placeholder="Nome do Jogador" />
+    <button onclick="addPlayer()">Adicionar Jogador</button>
+    <div class="name-list" id="nameList"></div>
+    <div class="lists">
+      <div>
+        <h2>Atacantes</h2>
+        <ul id="attackerList"></ul>
+      </div>
+      <div>
+        <h2>Levantadores</h2>
+        <ul id="setterList"></ul>
+      </div>
+    </div>
+    <button onclick="startGame()">Iniciar Partida</button>
+    <div class="teams-container" id="teamsContainer"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
