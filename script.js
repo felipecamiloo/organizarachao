@@ -14,12 +14,19 @@ function renderPossibleNames() {
 }
 
 function addPlayer(playerName = document.getElementById('playerName').value) {
-  if (playerName && possibleNames.includes(playerName)) {
-    attackers.push({ name: playerName, type: 'attacker' });
-    possibleNames = possibleNames.filter(name => name !== playerName);
-    updatePlayerList();
-    renderPossibleNames();
-    document.getElementById('playerName').value = '';
+  if (playerName) {
+    // Se o jogador já existe na lista ou é um nome novo
+    if (possibleNames.includes(playerName) || !possibleNames.includes(playerName) && playerName.trim() !== "") {
+      attackers.push({ name: playerName, type: 'attacker' });
+      possibleNames = possibleNames.filter(name => name !== playerName);
+      updatePlayerList();
+      renderPossibleNames();
+      document.getElementById('playerName').value = '';
+    } else {
+      alert("O nome do jogador não é válido. Por favor, insira um nome da lista ou um novo nome.");
+    }
+  } else {
+    alert("Por favor, insira um nome de jogador.");
   }
 }
 
