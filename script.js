@@ -1,6 +1,6 @@
 const attackers = [];
 const setters = [];
-let possibleNames = ["Brito", "Danilo", "Divinin", "Edivaldo", "Eduardo", "Felipe", "Fábio", "Jean", "Jv", "Marco", "Rogério", "Ronaldo", "Otávio", "Paula", "Ricardo", "Hugo", "Elena", "Tiago"];
+let possibleNames = ["Brito", "Danilo", "Divinin", "Edivaldo", "Eduardo", "Felipe", "Fábio", "Jean", "Jv", "Marco", "Rogério", "Ronaldo", "Wemerson", "Otávio", "Paula", "Ricardo", "Hugo", "Elena", "Tiago"];
 
 function renderPossibleNames() {
   const nameList = document.getElementById('nameList');
